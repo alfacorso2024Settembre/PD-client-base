@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rifiuta documento</title>
+    </head>
+    <body>
+        <header>
+            <img src="" alt="logo">
+            <a href="/homepage.html">Home</a>
+            <a href="/profile.html"><img src="" alt="profile picture"></a>
+        </header>
+        <hr>
+        <main style="margin-left: 40%;">
+            <form action="POST">
+                <label for="from">Da</label>
+                <input type="text" name="from" id="from"><br>
+                <label for="to">A</label>
+                <input type="text" name="to" id="to"><br>
+                <label for="subject">Oggetto</label>
+                <input type="text" name="subject" id="subject"><br>
+                <label for="reason">Motivo del rifiuto</label>
+                <select name="reasons" id="reason">
+                    <option value="wrdoc">Tipologia non corretta</option>
+                    <option value="noimg">Immagine non leggibile</option>
+                    <option value="expire">Documento scaduto</option>
+                    <option value="nodata">Dati non corrispondono</option>
+                    <option value="other">Altro</option>
+                </select>
+                <br>
+                <textarea name="otherReason" id="otherReason"></textarea>
+            </form>
+            <button>Invia</button>
+        </main>
+        <footer style="text-align: center;">
+            <hr>
+            <a href="/info.html">About us</a>
+        </footer>
+    </body>
+</html>
