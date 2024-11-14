@@ -1,34 +1,58 @@
 <!DOCTYPE html5>
 <html>
-<head>
+    <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Template</title>
+            <link rel="stylesheet" href="styles/styles.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
     <body>
-        <header>
-            <nav>
-                <div style="display: flex;">
-                    <img src="" alt="icon">
-                    <a href="homepage.html"><button>Home</button></a>
-                    <div><a href="rides.html">Rides</a></div>
-                    <img src="" alt="login">
+        <nav>
+            <div class="icon">
+                <i class="fa fa-car"></i>
+            </div>
+            <div class="dropdown">
+                <a href="homepage.html">
+                    <div class="dropbtn">
+                        Home    
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">Rides &#9660</div>
+                <div class="dropdown-content">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                    <a href="">Link 4</a>
                 </div>
-            </nav>
-            <hr>
-        </header>
-        <div class="rating" style="display: table; margin:0 auto">
-            <span style="font-size: 100px;">&#9733;</span>
-            <span style="font-size: 100px;">&#9733;</span>
-            <span style="font-size: 100px;">&#9733;</span>
-            <span style="font-size: 100px;">&#9733;</span>
-            <span style="font-size: 100px;">&#9733;</span>
-        </div>
-        <input type="text" id="notes" size="100" style="height: 250px; display: table; margin:0 auto"><br><br>
-        <div style="display: table; margin:0 auto;">
-            <a href=rides.html><button style="height: 50px;width: 150px;">Cancella</button></a>
-        <button style="height: 50px;width: 150px;">Conferma</button>
-        </div>
-        <footer style="text-align: center;">
-            <hr>
+            </div>
+            <div  class="log">
+                <i class="fa fa-user"></i>
+            </div>
+        </nav>
+        <main>
+            <div class="rating" style="display: table; margin:0 auto">
+                <span style="font-size: 100px;">&#9733;</span>
+                <span style="font-size: 100px;">&#9733;</span>
+                <span style="font-size: 100px;">&#9733;</span>
+                <span style="font-size: 100px;">&#9733;</span>
+                <span style="font-size: 100px;">&#9733;</span>
+            </div>
+            <input type="text" id="notes" size="100" style="height: 250px; display: table; margin:0 auto"><br><br>
+            <div style="display: table; margin:0 auto;">
+                <a href=rides.html><button style="height: 50px;width: 150px; margin-right: 10px;">Cancella</button></a>
+            <button style="height: 50px;width: 150px;">Conferma</button>
+            </div>
+        </main>
+        <footer >
             <a href="info.html">About us</a>
+            <br>asdasdas
+            <br>asdasdas
         </footer>
     </body>
-</head>
+
 </html>
