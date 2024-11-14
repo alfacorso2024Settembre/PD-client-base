@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rides</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/rides.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div style="display: flex;">
-                <img src="" alt="icon">
-                <a href="homepage.html"><button>Home</button></a>
-                <div>
-                    <select name="Rides" id="">
-
-                    </select>     
+    <nav>
+        <div class="icon">
+            <i class="fa fa-car fa-3x"></i>
+        </div>
+        <div class="dropdown">
+            <a href="homepage.html">
+                <div class="dropbtn">
+                    Home    
                 </div>
-                <img src="" alt="login img">
+            </a>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">Rides &#9660</div>
+            <div class="dropdown-content">
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+                <a href="">Link 4</a>
             </div>
-        </nav>
-        <hr>
-    </header>
+        </div>
+        <div  class="log">
+            <i class="fa fa-user fa-3x"></i>
+        </div>
+    </nav>
     <main>
-        <style>
-            button{width: 100%;}
-            th,td{border-bottom:1px black solid; border-right: 1px black solid;}
-        </style>
-        <h1>Rides</h1>
-        <section>
-            <table style="text-align: left;border: 1px black solid;width: 100%;">
+        
+        <section class="container">
+            <h1>Your Rides</h1>
+            <table >
                 <tr>
                     <th>RIDE</th>
                     <th>USER</th>
@@ -54,7 +63,7 @@
                     <td>Finished</td>
                     <td>12/11/2024</td>
                     <td><a href="payments.html"><button>Pay ride</button></a></td>
-                    <td><a href="support.html"><button>Report</button></a></td>
+                    <td><a href="Reports.html"><button  class="report">Report</button></a></td>
                 </tr>
                 <tr>
                     <td>C455</td>
@@ -63,7 +72,7 @@
                     <td>In progress</td>
                     <td>12/11/2024</td>
                     <td><button>End ride</button></td>
-                    <td><a href="support.html"><button>Report</button></a></td>
+                    <td><a href="Reports.html"><button  class="report">Report</button></a></td>
                 </tr>
                 <tr>
                     <td>C454</td>
@@ -84,9 +93,10 @@
             </table>
         </section>
     </main>
-    <footer style="text-align: center;">
-        <hr>
+    <footer >
         <a href="info.html">About us</a>
+        <br>asdasdas
+        <br>asdasdas
     </footer>
 </body>
 </html>

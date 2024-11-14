@@ -3,54 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/adminusers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>AdminUsers</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div style="display: flex;">
-                <img src="" alt="icon">
-                <a href="homepage.html"><button>Home</button></a>
-                <img src="" alt="login img">
+    <nav>
+        <div class="icon">
+            <i class="fa fa-car fa-3x"></i>
+        </div>
+        <div class="dropdown">
+            <a href="homepage.html">
+                <div class="dropbtn">
+                    Home    
+                </div>
+            </a>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">Rides &#9660</div>
+            <div class="dropdown-content">
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+                <a href="">Link 4</a>
             </div>
-        </nav>
-        <hr>
-    </header>
+        </div>
+        <div  class="log">
+            <i class="fa fa-user fa-3x"></i>
+        </div>
+    </nav>
     <main>
-        <style>
-            button{width: 100%;}
-            th,td{border-bottom:1px black solid; border-right: 1px black solid;}
-            
-        </style>
-        <h1>Manage users</h1>
-        <section>
-            <table style="text-align: left;border: 1px black solid;">
-                <tr>
-                    <th>USER</th>
-                    <th>SUSPEND</th>
-                    <th>DELETE</th>
-                </tr>
-                <tr>
-                    <td>U1342</td>
-                    <td><button>Suspend</button></td>
-                    <td><button>Delete</button></td>
-                </tr>
-                <tr>
-                    <td>U1344</td>
-                    <td><button>Suspend</button></td>
-                    <td><button>Delete</button></td>
-                </tr>
-                <tr>
-                    <td>U1311</td>
-                    <td><button>Suspend</button></td>
-                    <td><button>Delete</button></td>
-                </tr>
-            </table>
-        </section>
+        <div class="container">
+            <h1>Manage users</h1>
+            <section>
+                <table>
+                    <tr>
+                        <th>USER</th>
+                        <th>SUSPEND</th>
+                        <th>DELETE</th>
+                    </tr>
+                    <tr>
+                        <td>U1342</td>
+                        <td><button>Suspend</button></td>
+                        <td><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>U1344</td>
+                        <td><button>Suspend</button></td>
+                        <td><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>U1311</td>
+                        <td><button>Suspend</button></td>
+                        <td><button>Delete</button></td>
+                    </tr>
+                </table>
+            </section>
+
+        </div>
     </main>
-    <footer style="text-align: center;">
-        <hr>
+    <footer >
         <a href="info.html">About us</a>
+        <br>asdasdas
+        <br>asdasdas
     </footer>
 </body>
 </html>
