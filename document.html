@@ -2,33 +2,61 @@
 <html>
     <head>
         <title>Document</title>
+        <meta name="viewport" content="width=device, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/document.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
     </head>
     <body>
-        <header>
-            <img src="" alt="logo">
-            <a href="/homepage.html">Home</a>
-            <a href="/profile.html"><img src="" alt="profile picture"></a>
-        </header>
+        <nav>
+            <div class="icon">
+                <i class="fa fa-car fa-3x"></i>
+            </div>
+            <div class="dropdown">
+                <a href="homepage.html">
+                    <div class="dropbtn">
+                        Home    
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">Rides &#9660</div>
+                <div class="dropdown-content">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                    <a href="">Link 4</a>
+                </div>
+            </div>
+            <div  class="log">
+                <i class="fa fa-user fa-3x"></i>
+            </div>
+        </nav>
         <hr>
         <main>
-            <h1 style="text-align: center;">Documento</h1>
-            <div style="margin-left: 10%;">
-                <img src="" alt="foto documento">
+            <h1>Documento</h1>
+            <div id="document">
+                <div>
+                    <img src="./img/patente.jpg" alt="foto documento">
+                </div>
+                <div id="info">
+                    <p>Utente: Nome Cognome</p>
+                    <p>Tipo documento: patente</p>
+                    <p>Numero documento: CD5698LI</p>
+                    <p>Data di scadenza: 17/11/2026</p>
+                </div>
             </div>
-            <div id="info" style="margin-left: 30%;">
-                <p>Nome Cognome</p>
-                <p>Tipo documento</p>
-                <p>Numero documento</p>
-                <p>Data di scadenza</p>
-            </div>
-            <div id="options" style="margin-left: 25%;">
+            <div id="options">
                 <button>Accetta documento</button>
                 <a href="/rejectDoc.html"><button>Rifiuta documento</button></a>
             </div>
         </main>
-        <footer style="text-align: center;">
-            <hr>
-            <a href="/info.html">About us</a>
+        <footer>
+            <a href="info.html">About us</a>
+            <br>asdasdas
+            <br>asdasdas
         </footer>
     </body>
 </html>

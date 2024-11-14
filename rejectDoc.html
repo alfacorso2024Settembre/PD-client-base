@@ -2,39 +2,68 @@
 <html>
     <head>
         <title>Rifiuta documento</title>
+        <meta name="viewport" content="width=device, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/rejectDoc.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
     </head>
     <body>
-        <header>
-            <img src="" alt="logo">
-            <a href="/homepage.html">Home</a>
-            <a href="/profile.html"><img src="" alt="profile picture"></a>
-        </header>
-        <hr>
-        <main style="margin-left: 40%;">
+        <nav>
+            <div class="icon">
+                <i class="fa fa-car fa-3x"></i>
+            </div>
+            <div class="dropdown">
+                <a href="homepage.html">
+                    <div class="dropbtn">
+                        Home    
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">Rides &#9660</div>
+                <div class="dropdown-content">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                    <a href="">Link 4</a>
+                </div>
+            </div>
+            <div  class="log">
+                <i class="fa fa-user fa-3x"></i>
+            </div>
+        </nav>
+        <main>
             <h1>Rifiuta documento</h1>
-            <form action="POST">
-                <label for="from">Da</label>
-                <input type="text" name="from" id="from"><br>
-                <label for="to">A</label>
-                <input type="text" name="to" id="to"><br>
-                <label for="subject">Oggetto</label>
-                <input type="text" name="subject" id="subject"><br>
-                <label for="reason">Motivo del rifiuto</label>
-                <select name="reasons" id="reason">
-                    <option value="wrdoc">Tipologia non corretta</option>
-                    <option value="noimg">Immagine non leggibile</option>
-                    <option value="expire">Documento scaduto</option>
-                    <option value="nodata">Dati non corrispondono</option>
-                    <option value="other">Altro</option>
-                </select>
-                <br>
-                <textarea name="otherReason" id="otherReason"></textarea>
-            </form>
-            <button>Invia</button>
+            <div id="formSec">
+                <form action="POST">
+                    <label for="from">Da</label>
+                    <input type="text" name="from" id="from"><br>
+                    <label for="to">A</label>
+                    <input type="text" name="to" id="to"><br>
+                    <label for="subject">Oggetto</label>
+                    <input type="text" name="subject" id="subject"><br>
+                    <label for="reason">Motivo del rifiuto</label>
+                    <select name="reasons" id="reason">
+                        <option value="wrdoc">Tipologia non corretta</option>
+                        <option value="noimg">Immagine non leggibile</option>
+                        <option value="expire">Documento scaduto</option>
+                        <option value="nodata">Dati non corrispondono</option>
+                        <option value="other">Altro</option>
+                    </select>
+                    <br>
+                    <label for="other">Descrizione</label>
+                    <textarea name="otherReason" id="otherReason"></textarea>
+                </form>
+                <button type="submit">INVIA</button>
+            </div>
+           
         </main>
-        <footer style="text-align: center;">
-            <hr>
-            <a href="/info.html">About us</a>
+        <footer >
+            <a href="info.html">About us</a>
+            <br>asdasdas
+            <br>asdasdas
         </footer>
     </body>
 </html>

@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+
+#document{
+    width: 70%;
+    margin: 0 auto 20px 17em;
+    display: flex; 
+}
+
+img{
+    height: 100%;
+    max-width: 100%;
+}
+
+#info{
+    margin-left: 10%;
+}
+
+#options{
+    text-align: center;
+}
+
+button{
+    border-radius: 5px;
+    border: none;
+    background-color: lightsteelblue;
+    height: 50px;
+    width: 100px;
+    color: #263c5a;
+    font-weight: bold;
+}

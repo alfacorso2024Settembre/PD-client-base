@@ -2,37 +2,61 @@
 <html>
     <head>
         <title>Accept Documents</title>
+        <meta name="viewport" content="width=device, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/acceptDoc.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
     </head>
     <body>
-        <header>
-            <img src="" alt="logo">
-            <a href="/homepage.html">Home</a>
-            <a href="/profile.html"><img src="" alt="profile picture"></a>
-        </header>
-        <hr>
+        <nav>
+            <div class="icon">
+                <i class="fa fa-car fa-3x"></i>
+            </div>
+            <div class="dropdown">
+                <a href="homepage.html">
+                    <div class="dropbtn">
+                        Home    
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">Rides &#9660</div>
+                <div class="dropdown-content">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                    <a href="">Link 4</a>
+                </div>
+            </div>
+            <div  class="log">
+                <i class="fa fa-user fa-3x"></i>
+            </div>
+        </nav>
         <main>
-            <h1 style="text-align: center;">Documenti da accettare</h1>
-            <table style="width: 100%; border:1px solid black;">
-                <tr>
+            <h1>Documenti da accettare</h1>
+            <table>
+                <tr id="tableHead">
                     <th><strong>UTENTE</strong></th>
                     <th><strong>TIPO DI DOCUMENTO</strong></th>
                     <th></th>
                 </tr>
-                <tr style="text-align: center;">
+                <tr>
                     <td style>Nome Cognome</td>
                     <td>tipo documento</td>
                     <td><a href="/document.html"><button>Visualizza</button></a></td>
-                    <tr style="text-align: center;">
+                    <tr>
                         <td style>Nome Cognome</td>
                         <td>tipo documento</td>
                         <td><a href="/document.html"><button>Visualizza</button></a></td>
                     </tr>
-                    <tr style="text-align: center;">
+                    <tr>
                         <td style>Nome Cognome</td>
                         <td>tipo documento</td>
                         <td><a href="/document.html"><button>Visualizza</button></a></td>
                     </tr>
-                    <tr style="text-align: center;">
+                    <tr>
                         <td style>Nome Cognome</td>
                         <td>tipo documento</td>
                         <td><a href="/document.html"><button>Visualizza</button></a></td>
@@ -40,9 +64,10 @@
                 </tr>
             </table>
         </main>
-        <footer style="text-align: center;">
-            <hr>
-            <a href="/info.html">About us</a>
+        <footer >
+            <a href="info.html">About us</a>
+            <br>asdasdas
+            <br>asdasdas
         </footer>
     </body>
 </html>
