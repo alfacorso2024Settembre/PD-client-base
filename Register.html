@@ -3,6 +3,7 @@
 <html lang="it">
 <head>
     <title>My Personal Driver</title>
+    <!--
     <style>
         .section {
             display: flex;
@@ -19,31 +20,55 @@
             align-items: center;
             justify-content: space-around;
         }
-    </style>
+    </style>    
+    -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/registerStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--
     <header class="header">
         <button>Go back</button>
         <h1>My personal driver</h1>
     </header>
-        <div class="section">
-            <form class = "formLogin">
-                
-                <input type="text" id="femail" value="example@email.com"><br>
-                
-                <input type="text" id="fpassword" value="Password"><br>
-                
-                <input type="text" id="fbirthdate" value="DateOfBirth"><br>
-
-                <input type="text" id="fnumber" value="Phone number"><br>
-
-
-                
-               
-                <button>Register</button>
-                
-            </form>
+    -->
+    <nav>
+        <div class="icon">
+            <i class="fa fa-car"></i>
         </div>
-    <footer><button>About us</button></footer>
+        <div class="dropdown">
+            <a href="homepage.html">
+                <div class="dropbtn">
+                    Home    
+                </div>
+            </a>
+        </div>
+    </nav>
+    <main class="main-register">
+        <h1 class="header-auth">Register</h1>
+
+        <div class="form-container"> 
+            <form class="formRegister"> 
+                <input style="color:darkgray" type="text" id="femail" value="example@email.com" onfocus="this.value=''"><br>
+                <!--<div class ="pass-container">-->
+                    <input style="color:darkgray" type="text" id="fpassword" value="Password" onfocus="this.value=''" >
+                    <!--<img class="auth-form-status" src ="./img/eye.svg" >-->
+                    <br>
+                <!--</div>-->
+                <input style="color:darkgray" type="text" id="fbirthdate" value="DateOfBirth dd/mm/yyyy" onfocus="this.value=''" ><br>
+                <input style="color:darkgray" type="text" id="fnumber" value="Phone number" onfocus="this.value=''" ><br> 
+                <!--<div class="register-confirm-container"> -->
+                <button class="register-button" >Register</button> 
+                <!--<img class="auth-form-status" src ="./img/Red-cross.png" >-->
+            <!--</div>-->
+            </form> 
+        </div>
+        
+    </main>
+        <footer >
+            <a href="info.html">About us</a>
+        </footer>
 </body>
 </html>

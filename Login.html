@@ -3,47 +3,49 @@
 <html lang="it">
 <head>
     <title>My Personal Driver</title>
-    <style>
-        .section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            
-        }
-        .formLogin{
-            flex-direction: column;
-        }
-        .header{
-            display: flex; 
-            align-items: center;
-            justify-content: space-around;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/registerStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <header class="header">
-        <button>Go back</button>
-        <h1>My personal driver</h1>
-    </header>
-        <div class="section">
-            <form class = "formLogin">
+    <nav>
+        <div class="icon">
+            <i class="fa fa-car"></i>
+        </div>
+        <div class="dropdown">
+            <a href="homepage.html">
+                <div class="dropbtn">
+                    Home    
+                </div>
+            </a>
+        </div>
+    </nav>
+    <main class="main-register">
+        <h1 class="header-auth">Login</h1>
+        <div class="form-container"> 
+            <form class = "formRegister">
                 
-                <input type="text" id="femail" value="example@email.com"><br>
+                <input style="color:darkgray" type="text" id="femail" value="example@email.com" onfocus="this.value=''"><br>
                 
-                <input type="text" id="fpassword" value="Password"><br>
+                <input style="color:darkgray" type="text" id="fpassword" value="Password" onfocus="this.value=''"><br>
                 
-                <button>Sign in</button><br>
                 
-                <a href ="resetPass">Forgot password?</a>
+                <button class="register-button" >Login</button><br>
+                    
                 
-                <p>Not registred?</p>
-                <button>SignUp</button>
+                <a href ="ResetPassword.html">Forgot password?</a><br>
+                
+                <a href ="Register.html">Not registred?</a>
+                
                 
             </form>
         </div>
-    <footer><button>About us</button></footer>
+    </main>
+    <footer >
+        <a href="info.html">About us</a>
+        
+    </footer>
 </body>
 </html>

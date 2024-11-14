@@ -1,0 +1,59 @@
+
+.main-register{ 
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    
+    align-items: center; 
+}
+
+.form-container { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+} 
+.formRegister {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    
+}
+
+.header-auth{
+    display: flex;
+    align-self: center; 
+}
+
+.register-button {
+    
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: lightsteelblue;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color:#263c5a;
+    
+}
+
+.register-confirm-container{
+    display: flex;
+}
+.pass-container{
+    display: inline-flexbox;
+}
+
+.auth-form-status {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.register-confirm-container {
+    display: flex;
+    align-items: center;
+}
