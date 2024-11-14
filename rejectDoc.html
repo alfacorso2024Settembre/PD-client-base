@@ -46,6 +46,7 @@
                     <input type="text" name="subject" id="subject"><br>
                     <label for="reason">Motivo del rifiuto</label>
                     <select name="reasons" id="reason">
+                        <option value="default" selected>Scegli un'opzione</option>
                         <option value="wrdoc">Tipologia non corretta</option>
                         <option value="noimg">Immagine non leggibile</option>
                         <option value="expire">Documento scaduto</option>
@@ -54,7 +55,7 @@
                     </select>
                     <br>
                     <label for="other">Descrizione</label>
-                    <textarea name="otherReason" id="otherReason"></textarea>
+                    <textarea name="otherReason" id="otherReason" placeholder="(opzionale) &#10;Specificare il motivo del rifiuto"></textarea>
                 </form>
                 <button type="submit">INVIA</button>
             </div>
