@@ -1,0 +1,236 @@
+img {
+    height: 50px;
+}
+
+a,
+a:visited {
+    color: #263c5a;
+
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: #263c5a;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+main {
+    flex-grow: 1;
+}
+
+nav {
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    grid-template-columns: 40% auto auto 40%;
+    position: sticky;
+    top: 0;
+}
+
+.divNav {
+    display: flex;
+}
+
+
+.functions {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+footer {
+    background-color: lightsteelblue;
+
+    border-top: 1px solid black;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.dropbtn {
+    padding: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dropdown:hover,
+nav img:hover {
+    background-color: #81a1ca;
+    border-radius: 6px;
+}
+
+.dropdown {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {}
+
+.icon {
+    display: flex;
+    align-items: center;
+    align-content: end;
+}
+
+.log {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    align-content: right;
+}
+
+
+.profilePicture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profilePictureDiv {
+    height: 120px;
+    width: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.divYourProfile {
+    background: linear-gradient(135deg, #f0f4f8, #dfe3e8);
+    border: 1px solid #c0c7d0;
+    padding: 30px;
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.divInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.divInformation span {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.divInformation a {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #444;
+    color: #4f6c8e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.divInformation a:hover {
+    text-decoration: underline;
+}
+
+.divInformation input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #c0c7d0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    color: #4f6c8e;
+    background-color: #f7f9fc;
+}
+
+.divInformation input:focus {
+    border-color: #4f6c8e;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.divInformation div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.modifyYourProfileButton {
+    background-color: #4f6c8e;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.modifyYourProfileButton:hover {
+    background-color: #3d5672;
+    transform: scale(1.05);
+}
+
+.modifyYourProfileButton {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.modifyYourProfileButton:hover {
+    transform: scale(1.05);
+}

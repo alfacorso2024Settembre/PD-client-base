@@ -2,39 +2,75 @@
 <html>
 
 <head>
-    <title>User profile</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="styles/styleAlesia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!--<nav>
-        <img src="" alt="logoMyPersonalDriver" />
-        <a href="home.html">Home</a>
-        <select>
-            <option>Rides</option>
-            <option>Book a ride</option>
-            <option>Your rides</option>
-        </select>
-        <a href="login.html">Login</a>
-    </nav>-->
-
-    <div style="border: 2px solid black; padding: 20px; max-width: fit-content; margin-left: auto; margin-right: auto;">
-        <h3 style="text-align: center;">Your profile</h3>
-        <div style="max-width: fit-content; margin-left: auto; margin-right: auto;">
-            <img src="" alt="Profile picture user"><br>
-            <span>Email: mariorossi@gmail.com</span><br>
-            <span>Password: *******</span><br>
-            <span>Firstname: Mario</span><br>
-            <span>Latsname: Rossi</span><br>
-            <span>Birthdate: 12/05/1990</span><br>
-            <span>Phone: 1234567890</span><br>
-            <a href="reviews.html">Reviews</a><br>
-            <a href="reports.html">Reports</a><br>
-            <a href="cars.html">Cars</a><br>
-            <a href="documents.html">Documents</a><br>
-            <a href="modifyProfile.html"><button>Modify your profile</button></a>
+    <nav>
+        <div class="left">
+            <div class="icon">
+                <i class="fa fa-car fa-3x"></i>
+            </div>
         </div>
-    </div>
+        <div class="center">
+            <div class="dropdown">
+                <a href="homepage.html">
+                    <div class="dropbtn">Home</div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">Rides &#9660</div>
+                <div class="dropdown-content">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                    <a href="">Link 4</a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="log">
+                <i class="fa fa-user fa-3x"></i>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="divYourProfile">
+            <h3 style="text-align: center;">Your profile</h3>
+            <div style="max-width: fit-content; margin-left: auto; margin-right: auto;">
+                <div class="profilePictureDiv">
+                    <img src="img/profilePicture.jpg" alt="Profile picture user" class="profilePicture"><br>
+                </div>
+                <div class="divInformation">
+                    <span>Email: mariorossi@gmail.com</span><br>
+                    <span>Password: *******</span><br>
+                    <span>Firstname: Mario</span><br>
+                    <span>Latsname: Rossi</span><br>
+                    <span>Birthdate: 12/05/1990</span><br>
+                    <span>Phone: 1234567890</span><br>
+                    <a href="reviews.html">Reviews</a><br>
+                    <a href="reports.html">Reports</a><br>
+                    <a href="cars.html">Cars</a><br>
+                    <a href="documents.html">Documents</a><br>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <a href="modifyProfile.html"><button class="modifyYourProfileButton">Modify your
+                            profile</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="info.html">About us</a>
+        <br>asdasdas
+        <br>asdasdas
+    </footer>
 </body>
 
 </html>
