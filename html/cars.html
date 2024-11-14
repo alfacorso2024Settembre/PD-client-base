@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <script src="cars.js"></script>
+    <link rel="stylesheet" href="cars.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="pageTitle">Your Cars</h2>
+        <hr>
+        <table class="carsTable">
+            <th>Car</th>
+            <th>Displacement</th>
+            <th>Gear</th>
+            <th>Insured</th>
+            <tr>
+                <td><p>Fiat Tipo</p></td>
+                <td><p>1600</p></td>
+                <td><p>MANUAL</p></td>
+                <td><img src="../img/Green-check.png" alt="Green-check" width="10%" height="10%"></td>
+            </tr>
+            <tr>
+                <td><p>Fiat Tipo</p></td>
+                <td><p>1600</p></td>
+                <td><p>MANUAL</p></td>
+                <td><img src="../img/Red-cross.png" alt="Red-cross" width="10%" height="10%"></td>
+            </tr>
+            <tr>
+                <td><p>Fiat Tipo</p></td>
+                <td><p>1600</p></td>
+                <td><p>MANUAL</p></td>
+                <td><img src="../img/Wait-icon.png" alt="Wait-icon" width="10%" height="10%"></td>
+            </tr>
+        </table>
+        <div class="btnADD">
+            <input type="button" value="ADD CAR" id="openBtn" onclick="open()" style="width: 100%" class="button">
+        </div>
+        
+        <div class="btnRM">
+            <input type="button" value="REMOVE" id="btnSearchLib" class="button">
+            <input type="button" value="MODIFY CAR" id="btnSearchLib" class="button">
+        </div>
+    </div>
+    <br>
+    <!--<div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closeBtn" class="close-btn" onclick="close()">&times;</span>
+            <h2 style="text-align: center;">Your Cars</h2>
+            <hr>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="brand" style="margin-left: 1%;">Brand:</label>
+                <input type="text" id="brand" name="brand" required style="width: 95% ; margin-bottom: 6%; margin-left: 1%;">
+    
+                <label for="model" style="margin-left: 1%;">Model:</label>
+                <input type="text" id="model" name="model" required style="width: 95% ; margin-bottom: 6%; margin-left: 1%;">
+    
+                <label for="displacement" style="margin-left: 1%;">Displacement:</label>
+                <input type="text" id="displacement" name="displacement" required style="width: 95%; margin-bottom: 6%; margin-left: 1%;">
+    
+                <label for="gear" style="margin-left: 1%;">Gear:</label>
+                <select id="gear" name="gear" style="width: 95%; margin-bottom: 6%; margin-left: 1%;">
+                    <option value="manual">MANUAL</option>
+                    <option value="automatic">AUTOMATIC</option>
+                    <option value="semi-automatic">SEMIAUTOMATIC</option>
+                </select>
+                <div style="width: 95%; border: 1px solid black; margin-left: 1%;">
+                    <label for="image">Upload insurance photo:</label>
+                    <input type="file" id="insurancePhoto" name="insurancePhoto" required style="margin-bottom: 3%;">
+                </div>
+                <br>
+    
+                <button type="submit" ; style="margin-bottom: 4%; margin-left: 1%;">Confirm</button>
+            </form>
+        </div>
+    </div>-->
+</body>
+</html>

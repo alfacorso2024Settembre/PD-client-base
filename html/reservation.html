@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <script src="reservation.js"></script>
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="..\styles\styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="icon">
+            <i class="fa fa-car"></i>
+        </div>
+        <div class="dropdown">
+            <a href="homepage.html">
+                <div class="dropbtn">
+                    Home    
+                </div>
+            </a>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">Rides &#9660</div>
+            <div class="dropdown-content">
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+                <a href="">Link 4</a>
+            </div>
+        </div>
+        <div  class="log">
+            <i class="fa fa-user"></i>
+        </div>
+    </nav>
+    <main class="reservContainer">
+        <div>
+            <h1 style="text-align: center;">Reserve a ride</h1>
+            <p class="error" id="error-message"></p>
+            
+            <div id="reservation-table-container">
+                <table id="reservation-table" class="main-table">
+                    <thead>
+                        <tr>
+                            <th>Punteggio</th>
+                            <th>Nome</th>
+                            <th>distanza</th>
+                            <th>tempo stimato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="optionbtn">
+                <button onclick="popupPrenota()" id="btnPopupPrenota" disabled="true">Prenota</button>
+            </div>
+        </div>
+        <div id="popupReservation" class="popup">
+            <div class="popup-content">
+                <span id="closeBtn" class="close-btn" onclick="closePrenota()">&times;</span>
+                <h2 style="text-align: center;">Prenota</h2>
+                <hr>
+                <div class="driverPopup">
+                    <img src="../img/Green-check.png" alt="Green-check" width="10%" height="10%">
+                    <div class="reviewStars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>nome e cognome</h3>
+                        <div id="reservationReview-table-container">
+                            <table id="reservationReview-table">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Punteggio</th>
+                                        <th>Recensione</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                afda
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </td>
+                                            <td>
+                                                aehgaegfa
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    <button onclick="addPrenotazione()" id="btnPrenota">Prenota</button>
+                </div>
+            </div>
+    </main>
+            <footer >
+                <a href="info.html">About us</a>
+                <br>asdasdas
+                <br>asdasdas
+            </footer>
+        </div>  
+</body>
+</html>

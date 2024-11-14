@@ -1,0 +1,51 @@
+.main-table tr:hover{
+    background-color: #f1f1f1 !important;
+}
+.error {
+    color: red;
+}
+
+.optionbtn{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    gap:4%;
+    margin-top: 2rem;
+}
+
+.reservContainer{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+#reservation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#reservation-table th, #reservation-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#reservation-table-container {
+    width: 100%;
+    height: 15rem;
+    overflow: auto;
+}
+
+#reservationReview-table {
+    font-size: small;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#reservationReview-table-container{
+    width: 100%;
+    height: 10rem;
+    overflow: auto;
+}
