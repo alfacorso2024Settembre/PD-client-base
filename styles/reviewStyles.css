@@ -1,0 +1,43 @@
+.rating:hover
+{
+    cursor: pointer;
+}
+
+.rating
+{
+    font-size: 100px;
+    margin:0 auto;
+}
+
+#ratingDiv
+{
+    display: table;
+    margin:0 auto;
+}
+
+#inputDiv
+{
+    display: table;
+    margin:0 auto;
+}
+
+#deleteButton
+{
+    height: 50px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+#confirmButton
+{
+    height: 50px;
+    width: 150px;
+}
+
+#notes
+{
+    height: 20%;
+    width: 50%;
+    display: table;
+    margin:0 auto
+}
