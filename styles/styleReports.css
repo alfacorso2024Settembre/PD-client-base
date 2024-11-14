@@ -1,0 +1,64 @@
+.confirmButton {
+    border: 5px solid green;
+    border-radius: 25px;
+    background-color:green;
+    color:white;
+  }
+.changeButton{
+    border: 5px solid blue;
+    border-radius: 25px;
+    background-color:blue;
+    color:white;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.deleteButton{
+    width: 120px;
+    border: 5px solid brown;
+    border-radius: 25px;
+    background-color:brown;
+    color:white;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+button a{
+    color:white;
+}
+.button{
+    border: 5px solid grey;
+    border-radius: 25px;
+    background-color:grey;
+    color:white;
+}
+.buttonPosition{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.inserimento{
+    background-color: white;
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+}
+#table1{
+    border-collapse: separate;
+    border-spacing: 20px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.contents{
+    background-color: white;
+    text-align: center;
+    flex-grow: 1;
+}
+#reportResponse{
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    resize: none;
+    padding: 20px;
+}
+#choosePic{
+    padding-left: 70px;
+}
