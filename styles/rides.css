@@ -14,21 +14,12 @@ table tr>*{
     max-width: fit-content;;
 
 }
+
 button{
-    align-self: center;
     width: 100%;
-    background-color:lightsteelblue;
-    color:#263c5a;
-    font-weight: bold;
-    border: none;
-    border-radius:15px;
-    height: 2rem;
+    font-weight: bold; 
 }
-button:hover{
-    background-color:#81a1ca;
-    color:#0f1824;
-    cursor:pointer;
-}
+
 
 .container{
     display: flex;
