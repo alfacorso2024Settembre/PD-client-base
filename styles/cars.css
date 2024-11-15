@@ -2,24 +2,22 @@
     margin-left: 2.5rem;
     margin-right: 2.5rem;
 }
-.btnRMCar{
+
+.error {
+    color: red;
+}
+
+.gridBtnCar{
+    margin-top: 2rem;
     display: grid; 
-    grid-template-columns: 40% 40%;
-    gap: 20%;
+    grid-template-columns: 33% 33% 33%;
 }
 
-.btnRMCar button {
-    justify-self: center; /* Centra orizzontalmente */
-    align-self: center;   /* Centra verticalmente */
+.gridBtnCar button {
+    justify-self: center;
+    align-self: center;
 }
 
-.btnAddCar{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 0.8rem;
-    margin-top: 0.8rem;
-}
 
 
 #car-table-container {

@@ -1,5 +1,5 @@
 let off
-
+let rowClicked;
 
 function getLibri(offset) {
     off = offset;
@@ -31,8 +31,8 @@ function getLibri(offset) {
                     counter=0
                     for(l of libri){
                         counter++
-                        row = document.getElementById("tableRowRes"+counter)
-                        row.style.backgroundColor = "#FFF"
+                        rowClicked = document.getElementById("tableRowRes"+counter)
+                        rowClicked.style.backgroundColor = "#FFF"
                     }    
                     console.log("cliccato " + tr.id)
                     tr.style.backgroundColor = "#f1f1f1"
