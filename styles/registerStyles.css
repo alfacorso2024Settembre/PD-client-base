@@ -29,20 +29,20 @@
 
 .register-button {
     
-    width: 100px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: lightsteelblue;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    color:#263c5a;
+    
+        width: 80%;
+        border: none;
+        border-radius: 2rem;
+        background-color: lightsteelblue;
+        padding: 0.5rem;
+        cursor: pointer;
     
 }
 
 .register-confirm-container{
     display: flex;
 }
+
 .pass-container{
     display: inline-flexbox;
 }
