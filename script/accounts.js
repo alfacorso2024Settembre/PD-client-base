@@ -40,14 +40,26 @@ function validateDateOfBirth(dateOfBirth) {
     }
 }
 
-document.querySelector('.register-button').addEventListener('click', function(event) {
+
+function statusValidation(){
+    const email = document.getElementById('femail').value;
+    const password = document.getElementById('fpassword').value;
+    const statusImage = document.querySelector('.auth-form-status');
+
+    if (validateEmail(email) && validatePassword(password)) {
+        statusImage.src = './img/Green-check.png';
+    } else {
+        statusImage.src = './img/Red-cross.png';
+    }
+}
+
+document.querySelector('.register-button').addEventListener('onmouseover', function(event) {
     event.preventDefault();
     const email = document.getElementById('femail').value;
     const password = document.getElementById('fpassword').value;
-    const confirmPassword = document.getElementById('fconfirmpassowrd').value;
     const statusImage = document.querySelector('.auth-form-status');
 
-    if (validateEmail(email) && validatePassword(password) && password === confirmPassword) {
+    if (validateEmail(email) && validatePassword(password)) {
         statusImage.src = './img/Green-check.png';
     } else {
         statusImage.src = './img/Red-cross.png';
