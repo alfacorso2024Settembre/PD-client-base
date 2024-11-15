@@ -1,4 +1,4 @@
-.confirmButton {
+/* .confirmButton {
     border: 5px solid green;
     border-radius: 25px;
     background-color:green;
@@ -29,10 +29,10 @@ button a{
     border-radius: 25px;
     background-color:grey;
     color:white;
-}
-.buttonPosition{
-    margin-top: 20px;
-    margin-bottom: 100px;
+} */
+button{
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 .inserimento{
     background-color: white;
