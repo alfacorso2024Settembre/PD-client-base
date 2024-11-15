@@ -21,12 +21,7 @@ img{
     text-align: center;
 }
 
-button{
-    border-radius: 5px;
-    border: none;
-    background-color: lightsteelblue;
-    height: 50px;
+/* TODO: troppo grandi ?? */
+/* button{
     width: 100px;
-    color: #263c5a;
-    font-weight: bold;
-}
+} */
