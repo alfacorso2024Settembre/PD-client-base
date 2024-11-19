@@ -11,6 +11,7 @@
     margin-top: 2rem;
     display: grid; 
     grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2rem;
 }
 
 .gridBtnCar button {
@@ -28,4 +29,10 @@
 
 .main-table{
     margin-top: 2rem;
+}
+
+.popupInput{
+    width: 95% ;
+    margin-bottom: 6%;
+    margin-left: 1%;
 }
