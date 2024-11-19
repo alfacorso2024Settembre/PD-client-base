@@ -21,6 +21,10 @@ img{
     text-align: center;
 }
 
+.infoLabel{
+    font-weight: bold;
+}
+
 /* TODO: troppo grandi ?? */
 /* button{
     width: 100px;

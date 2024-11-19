@@ -34,14 +34,33 @@ function createContent(doc, docContainer){
     divInfo.id = 'info';
 
     let user = document.createElement('p');
-    user.textContent = `Utente: ${doc.user.firstname} ${doc.user.lastname}`;
+    let userSpan = document.createElement('span');
+    userSpan.className = 'infoLabel';
+    userSpan.textContent = 'Utente: ';
+    user.appendChild(userSpan);
+    user.appendChild(document.createTextNode(` ${doc.user.firstname} ${doc.user.lastname}`));
+
     let docType = document.createElement('p');
-    docType.textContent = `Tipo documento: ${doc.type}`;
+    let typeSpan = document.createElement('span');
+    typeSpan.className = 'infoLabel';
+    typeSpan.textContent = 'Tipo documento: ';
+    docType.appendChild(typeSpan);
+    docType.appendChild(document.createTextNode(`${doc.type}`));
+
     let docNum = document.createElement('p');
-    docNum.textContent = `Numero documento: ${doc.number}`;
+    let numSpan = document.createElement('span');
+    numSpan.className = 'infoLabel';
+    numSpan.textContent = 'Numero documento: ';
+    docNum.appendChild(numSpan);
+    docNum.appendChild(document.createTextNode(`${doc.number}`));
+
     let expiryDate = document.createElement('p');
+    let dateSpan = document.createElement('span');
+    dateSpan.className = 'infoLabel';
+    dateSpan.textContent = 'Data di scadenza: ';
+    expiryDate.appendChild(dateSpan);
     let formatDate = new Date(doc.expiryDate.replace("[UTC]", ""));
-    expiryDate.textContent = `Data di scadenza: ${formatDate.toLocaleDateString()}`;
+    expiryDate.appendChild(document.createTextNode(`${formatDate.toLocaleDateString()}`));
 
     divInfo.appendChild(user);
     divInfo.appendChild(docType);

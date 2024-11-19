@@ -7,6 +7,11 @@ table{
     margin: 0 auto;
 }
 
+#tableHead th{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 /* 
 table, td, th {
     border: 1px solid;
