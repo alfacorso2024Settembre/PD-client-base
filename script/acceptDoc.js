@@ -20,21 +20,37 @@ function displayDocs(docs){
     let docContainer = document.getElementById("docsData");
     docContainer.innerHTML = '';
 
-    let tableHead = document.createElement('tr');
-    tableHead.id = 'tableHead';
+    if(docs == null){
+        /* TODO: da vedere */
+        let parag = document.createElement('p');
+        parag.textContent = "Non sono presenti documenti da validare.";
+    }else{
+        let tableHead = document.createElement('tr');
+        tableHead.id = 'tableHead';
 
-    let tdUser = document.createElement('td');
-    let userSpan = document.createElement('span');
-    userSpan.textContent = 'Utente';
-    tableHead.appendChild(tdUser);
+        let thTable = document.createElement('th');
+        let userStrong = document.createElement('strong');
+        userStrong.textContent = "utente";
+        thTable.appendChild(userStrong);
+        tableHead.appendChild(thTable);
+
+        let thDoc = document.createElement('th');
+        let docStrong = document.createElement('strong');
+        docStrong.textContent = "tipo di documento";
+        thDoc.appendChild(docStrong);
+        tableHead.appendChild(thDoc);
+
+        let th = document.createElement('th');
+        tableHead.appendChild(th);
+
+        docContainer.appendChild(tableHead);
 
     
-
-    docContainer.appendChild(tableHead);
-
-    for (let index = 0; index < docs.length; index++) {
-        createContent(docs[index], docContainer);
+        for (let index = 0; index < docs.length; index++) {
+            createContent(docs[index], docContainer);
+        }
     }
+    
 }
 
 function createContent(doc, docContainer){
@@ -50,7 +66,7 @@ function createContent(doc, docContainer){
 
     let tdButton = document.createElement('td');
     let view = document.createElement('a');
-    view.href = '/document.html';
+    view.href = /* `/document.html?id=${doc.id}` */'/document.html?id=3';
     let button = document.createElement('button');
     button.textContent = 'Visualizza';
 
