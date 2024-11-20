@@ -108,10 +108,10 @@ async function postCar(event) {
   const gearADD = document.getElementById("gearADD").value;
   const numberADD = document.getElementById("numberADD").value;
   const ExpiryADD = document.getElementById("ExpiryADD").value;
-  const insurancePhotoADD = document.getElementById("insurancePhotoADD").files[0];
+  const insurancePhotoADD = document.getElementById("insurancePhotoADD").files[0]; //NON VALORIZZA CONTROLLARE
 
   //chiamata post document
-  let insurance;
+  let insuranceADD;
   let bodyinsurance = {
     accepted:false,
     isValid:false,
@@ -119,10 +119,9 @@ async function postCar(event) {
     expiryDate: ExpiryADD,
     photo: insurancePhotoADD,
     type: "INSURANCE"
-    //inserire body
   }
 
-  fetch("/users/{"+mockUser.idUser+"}/documents", {
+  fetch("/users/{"+userADD.idUser+"}/documents", {
     method: 'POST',
     body: bodyinsurance
 })
@@ -134,7 +133,7 @@ async function postCar(event) {
 })
 .then(car => {
     console.log("Macchina inserita: " + JSON.stringify(car));
-    insurance = bodyinsurance
+    insuranceADD = bodyinsurance
 })
 .catch(error => {
     console.error('Errore nell aggiunta dell assicurazione:', error);
@@ -151,7 +150,7 @@ async function postCar(event) {
       vehicleDisplacement: displacementADD,
       gearType: gearADD,
       user: userADD,
-      insurance: insuranceADD
+      insurance: bodyinsurance
   };
 
   console.log(JSON.stringify(formData));
