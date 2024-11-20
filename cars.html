@@ -114,33 +114,38 @@
                 <span id="closeBtn" class="close-btn" onclick="closeAddPopup()">&times;</span>
                 <h2 style="text-align: center;">Add car</h2>
                 <hr>
-                <form action="#" method="POST" enctype="multipart/form-data">
+                <form method="POST" onsubmit="postCar(event)">
 
-                    <label for="brand" style="margin-left: 1%;">Place:</label>
-                    <input type="text" id="brand" name="brand" required style="width: 95% ; margin-bottom: 6%; margin-left: 1%;">
+                    <label for="plate">Plate:</label>
+                    <input type="text" id="plateADD" name="plate" required class="popupInput">
                     
-                    <label for="brand" style="margin-left: 1%;">Brand:</label>
-                    <input type="text" id="brand" name="brand" required style="width: 95% ; margin-bottom: 6%; margin-left: 1%;">
+                    <label for="brand">Brand:</label>
+                    <input type="text" id="brandADD" name="brand" required class="popupInput">
         
-                    <label for="model" style="margin-left: 1%;">Model:</label>
-                    <input type="text" id="model" name="model" required style="width: 95% ; margin-bottom: 6%; margin-left: 1%;">
+                    <label for="model">Model:</label>
+                    <input type="text" id="modelADD" name="model" required class="popupInput">
         
-                    <label for="displacement" style="margin-left: 1%;">Displacement:</label>
-                    <input type="text" id="displacement" name="displacement" required style="width: 95%; margin-bottom: 6%; margin-left: 1%;">
+                    <label for="displacement">Displacement:</label>
+                    <input type="text" id="displacementADD" name="displacement" required class="popupInput">
         
-                    <label for="gear" style="margin-left: 1%;">Gear:</label>
-                    <select id="gear" name="gear" style="width: 95%; margin-bottom: 6%; margin-left: 1%;">
+                    <label for="gear">Gear:</label>
+                    <select id="gearADD" name="gear" class="popupInput">
                         <option value="manual">MANUAL</option>
                         <option value="automatic">AUTOMATIC</option>
                         <option value="semi-automatic">SEMIAUTOMATIC</option>
                     </select>
-                    <div style="width: 95%; border: 1px solid black; margin-left: 1%;">
-                        <label for="image">Upload insurance photo:</label>
-                        <input type="file" id="insurancePhoto" name="insurancePhoto" required style="margin-bottom: 3%;">
-                    </div>
-                    <br>
+
+                    <label for="number">Number of document</label>
+                    <input type="text" id="numberADD" name="number" required class="popupInput">
         
-                    <button type="submit" ; style="margin-bottom: 4%; margin-left: 1%;">Confirm</button>
+                    <label for="Expiry">Expiry Date:</label>
+                    <input type="date" id="ExpiryADD" name="Expiry" required class="popupInput">
+
+                    <div class="popupInput" style="margin-top: 1rem">
+                        <label for="image">Upload insurance photo:</label>
+                        <input type="file" id="insurancePhotoADD" name="insurancePhoto" required>
+                    </div>
+                    <button type="submit">Confirm</button>
                 </form>
             </div>
         </div>
