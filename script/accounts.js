@@ -52,7 +52,7 @@ function statusValidation(){
         statusImage.src = './img/Red-cross.png';
     }
 }
-
+/*
 document.querySelector('.register-button').addEventListener('onmouseover', function(event) {
     event.preventDefault();
     const email = document.getElementById('femail').value;
@@ -65,3 +65,42 @@ document.querySelector('.register-button').addEventListener('onmouseover', funct
         statusImage.src = './img/Red-cross.png';
     }
 });
+*/
+const url = "http://localhost:8080/PDAccountsRS/accounts";
+
+const insertAccount = async() => {
+    try{
+        const email = document.getElementById("femail").value;
+        const password = document.getElementById("fpassword").value;
+        //const birthdate = document.getElementById("birthdateIdInsert").value;
+        //const phonenumber = document.getElementById("phonenumberInsert").value;
+        const role = "User";
+        const status = "Active"; 
+        const response = await fetch(`${url}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              
+                email: email, 
+                password: password,
+                role: role, 
+                status:status,
+          })
+          });
+          
+
+        if (!response.ok) {
+        throw new Error(result.error || 'Failed to register account');
+            
+        }
+        const result = await response.json();
+    
+        console.log(JSON.stringify(result));
+        return response;
+
+    }catch(error){
+        console.error("Failed to register account :" + error)
+    }
+}
