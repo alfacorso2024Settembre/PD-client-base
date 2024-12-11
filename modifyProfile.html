@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="script/userAjax.js"></script>
 </head>
 
 <body>
@@ -48,12 +49,12 @@
                     <img src="img/profilePicture.jpg" alt="Profile picture user" class="profilePicture"><br>
                 </div>
                 <div>
-                    <form class="divInformation">
+                    <form class="divInformation" id="modifyProfileForm">
                         <div>
-                            <input type="file">
+                            <input type="file" id="profilePicture">
                         </div>
                         <div>
-                            <label for="email">Email: </label><input type="text" name="email"
+                            <label for="email">Email: </label><input type="email" name="email"
                                 placeholder="mariorossi@gmail.com">
                         </div>
                         <div>
@@ -61,22 +62,13 @@
                                 placeholder="***********">
                         </div>
                         <div>
-                            <span>Firstname: Mario</span>
-                        </div>
-                        <div>
-                            <span>Latsname: Rossi</span>
-                        </div>
-                        <div>
-                            <span>Birthdate: 12/05/1990</span>
-                        </div>
-                        <div>
-                            <label for="phone">Phone: </label><input type="text" name="phone" placeholder="1234567890">
+                            <label for="phone">Phone: </label><input type="tel" name="phone" placeholder="1234567890">
                         </div>
                         <div style="margin: auto; margin-top: 10px;">
-                            <a href="modifyProfile.html"><button class="modifyYourProfileButton">Confirm your changes
-                                </button></a>
+                            <button class="modifyYourProfileButton" type="submit">Confirm your changes</button>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>

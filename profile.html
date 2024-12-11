@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="script/userAjax.js" defer></script>
 </head>
 
 <body>
@@ -45,15 +46,16 @@
             <h3 style="text-align: center;">Your profile</h3>
             <div style="max-width: fit-content; margin-left: auto; margin-right: auto;">
                 <div class="profilePictureDiv">
-                    <img src="img/profilePicture.jpg" alt="Profile picture user" class="profilePicture"><br>
+                    <img src="img/defaultProfilePicture.jpg" alt="Profile picture user" class="profilePicture"
+                        id="profilePicture"><br>
                 </div>
-                <div class="divInformation">
-                    <span>Email: mariorossi@gmail.com</span><br>
-                    <span>Password: *******</span><br>
-                    <span>Firstname: Mario</span><br>
-                    <span>Latsname: Rossi</span><br>
-                    <span>Birthdate: 12/05/1990</span><br>
-                    <span>Phone: 1234567890</span><br>
+                <div class="divInformation" id="userProfileInfo">
+                    <span id="email">Email: </span><br>
+                    <span id="password">Password: </span><br>
+                    <span id="firstname">Firstname: </span><br>
+                    <span id="lastname">Lastname: </span><br>
+                    <span id="birthdate">Birthdate: </span><br>
+                    <span id="phone">Phone: </span><br>
                     <a href="reviews.html">Reviews</a><br>
                     <a href="reports.html">Reports</a><br>
                     <a href="cars.html">Cars</a><br>
